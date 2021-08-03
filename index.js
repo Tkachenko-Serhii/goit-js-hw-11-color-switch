@@ -13,17 +13,17 @@ const refs = {
 };
 
 refs.startBtn.addEventListener("click", () => {
-  timer.startColorSet();
+  colorSwitch.startColorSet();
 });
 refs.stopBtn.addEventListener("click", () => {
-  timer.stopColorSet();
+  colorSwitch.stopColorSet();
 });
 
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-const timer = {
+const colorSwitch = {
   intervalId: null,
   isActive: false,
 
